@@ -51,3 +51,9 @@ Then, initialize the following variables.
 (Every code that is shown now needs to be put inside the setup())
 
 In the Setup(), put the serial communication to 115200 so that the measurment is able to be shown in the serial monitor
+
+<img width="470" alt="Schermafbeelding 2021-10-28 om 01 40 41" src="https://user-images.githubusercontent.com/70513682/139162680-59eb234f-8b88-4422-b5f9-1d9bcb649d9b.png">
+
+Define the trigger pins as the output, they send out the soundwave. Define the echo pins as the input, they receive the reflected soundwave and send the signal to the board
+
+<img width="482" alt="Schermafbeelding 2021-10-28 om 01 43 11" src="https://user-images.githubusercontent.com/70513682/139162875-a21d332b-fac4-46af-bf89-bd855b64ec63.png">
