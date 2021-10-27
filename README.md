@@ -26,5 +26,6 @@ Install the CP210x VCP Driver at: https://www.silabs.com/developers/usb-to-uart-
 - Connect 'TRIG' to 'D5'
 - Connect 'ECHO' to 'D6'
 - Connect 'GND' to 'GND'
-![ezgif com-webp-to-png](https://user-images.githubusercontent.com/70513682/139153130-7053bc1f-4f79-470c-98aa-474e856449f0.png)
 
+![ezgif com-webp-to-png](https://user-images.githubusercontent.com/70513682/139153130-7053bc1f-4f79-470c-98aa-474e856449f0.png)
+(Picture above for illustration)
