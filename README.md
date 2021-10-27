@@ -46,3 +46,8 @@ The 'CM_TO_INCH' variable allows us to convert distance from centimeters to inch
 Then, initialize the following variables.
 
 <img width="227" alt="Schermafbeelding 2021-10-28 om 01 35 51" src="https://user-images.githubusercontent.com/70513682/139162312-c54632ac-d3f3-4344-8cfc-39de428f3c05.png">
+
+# Step 8: Setup()
+(Every code that is shown now needs to be put inside the setup())
+
+In the Setup(), put the serial communication to 115200 so that the measurment is able to be shown in the serial monitor
