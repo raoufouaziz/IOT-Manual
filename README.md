@@ -32,7 +32,8 @@ Install the CP210x VCP Driver at: https://www.silabs.com/developers/usb-to-uart-
 (Picture above for illustration)
 # Step 6: Define triggers and echo pins
 Open the Arduino editor and define the echopins and triggerpins (Put this code before the setup()
-''' 
+ 
+'''
 const int trigPin = 12; 
 const int echoPin = 14; 
 '''
