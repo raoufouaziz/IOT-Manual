@@ -42,3 +42,7 @@ Open the Arduino editor and define the echopins and triggerpins (Put this code b
 The 'CM_TO_INCH' variable allows us to convert distance from centimeters to inches. 
 
 <img width="233" alt="Schermafbeelding 2021-10-28 om 01 29 00" src="https://user-images.githubusercontent.com/70513682/139161859-8a7d93e4-4321-4b7d-b184-714f480661c0.png">
+
+Then, initialize the following variables.
+
+<img width="227" alt="Schermafbeelding 2021-10-28 om 01 35 51" src="https://user-images.githubusercontent.com/70513682/139162312-c54632ac-d3f3-4344-8cfc-39de428f3c05.png">
