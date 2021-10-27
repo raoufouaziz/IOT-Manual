@@ -57,3 +57,10 @@ In the Setup(), put the serial communication to 115200 so that the measurment is
 Define the trigger pins as the output, they send out the soundwave. Define the echo pins as the input, they receive the reflected soundwave and send the signal to the board
 
 <img width="482" alt="Schermafbeelding 2021-10-28 om 01 43 11" src="https://user-images.githubusercontent.com/70513682/139162875-a21d332b-fac4-46af-bf89-bd855b64ec63.png">
+
+# Step 8: Loop()
+(Every code that is shown now needs to be put inside the loop())
+
+In the Loop(), the following line 'LOW' will give out a short pulse to ensure that the 'High' will send out a clean pulse. The 'High' pulse will send out a ultrasound
+
+<img width="433" alt="Schermafbeelding 2021-10-28 om 01 52 57" src="https://user-images.githubusercontent.com/70513682/139163559-f7b8380f-1a33-4033-9276-9b7aafd4f083.png">
