@@ -6,3 +6,5 @@ At the end of this manual you will be able to measure the distance of a object u
 - NodeMCU ESP8266 
 - Breadboard
 - Jumper wires
+# Step 1: Install the Arduino software
+Install Arduino's latest version at: https://www.arduino.cc/en/Main/Software
