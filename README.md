@@ -36,4 +36,7 @@ Open the Arduino editor and define the echopins and triggerpins (Put this code b
 
 <img width="250" alt="Schermafbeelding 2021-10-28 om 00 54 17" src="https://user-images.githubusercontent.com/70513682/139158880-9bda90f1-3262-426a-a7e7-9d46aa1790a6.png">
 
-# Step 7: 
+# Step 7: Define 'sound_speed' and 'CM_to_inch'
+The 'CM_TO_INCH' variable allows us to convert distance from centimeters to inches. 
+
+<img width="233" alt="Schermafbeelding 2021-10-28 om 01 29 00" src="https://user-images.githubusercontent.com/70513682/139161859-8a7d93e4-4321-4b7d-b184-714f480661c0.png">
