@@ -10,3 +10,8 @@ At the end of this manual you will be able to measure the distance of a object u
 Install Arduino's latest version at: https://www.arduino.cc/en/Main/Software
 # Step 2: Download and install USB drivers 
 Install the CP210x VCP Driver at: https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
+# Step 3: Install the NodeMCU Board 
+1. Open the Arduino software
+2. Go to Arduino > preferences and set the 'Editor language' to English
+3. Copy and paste this sentence into the 'Additional Boardmanager URL's': http://arduino.esp8266.com/stable/package_esp8266com_index.json
+4. Press the 'OK' button and restart Arduino
