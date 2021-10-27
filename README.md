@@ -6,5 +6,7 @@ At the end of this manual you will be able to measure the distance of a object u
 - NodeMCU ESP8266 
 - Breadboard
 - Jumper wires
-# Step 1: Install the Arduino software
+# Step 1: Download install the Arduino software
 Install Arduino's latest version at: https://www.arduino.cc/en/Main/Software
+# Step 2: Download and install USB drivers 
+Install the CP210x VCP Driver at: https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
