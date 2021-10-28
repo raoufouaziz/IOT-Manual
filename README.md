@@ -64,3 +64,17 @@ Define the trigger pins as the output, they send out the soundwave. Define the e
 In the Loop(), the following line 'LOW' will give out a short pulse to ensure that the 'High' will send out a clean pulse. The 'High' pulse will send out a ultrasound
 
 <img width="433" alt="Schermafbeelding 2021-10-28 om 01 52 57" src="https://user-images.githubusercontent.com/70513682/139163559-f7b8380f-1a33-4033-9276-9b7aafd4f083.png">
+
+After this the following line below will calculate the distance of a object while using the speed that the sound travels in as variable
+
+<img width="331" alt="Schermafbeelding 2021-10-28 om 01 57 12" src="https://user-images.githubusercontent.com/70513682/139163837-6c7ba717-4e4f-4d52-9423-0b0e5ec49ffe.png">
+
+to convert the ouput in CM instead of only outputting it in inch, use the following line
+
+<img width="322" alt="Schermafbeelding 2021-10-28 om 01 58 28" src="https://user-images.githubusercontent.com/70513682/139163932-c0eba53d-31c5-45d0-a3b4-04fd93e437f3.png">
+
+as last this line will put out the variables into the serial monitor as distance in cm and inch
+
+<img width="325" alt="Schermafbeelding 2021-10-28 om 02 01 02" src="https://user-images.githubusercontent.com/70513682/139164091-03219cc7-45e7-444b-9532-8fd8f0f5b16b.png">
+
+after this the setup is finished and de ultrasonic sensor should be emitting the distance recored in cm and inch!
