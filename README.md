@@ -21,11 +21,18 @@ Install the CP210x VCP Driver at: https://www.silabs.com/developers/usb-to-uart-
 2. Go to Arduino > preferences and set the 'Editor language' to English
 3. Copy and paste this sentence into the 'Additional Boardmanager URL's': http://arduino.esp8266.com/stable/package_esp8266com_index.json
 4. Press the 'OK' button and restart Arduino
+
+<img width="797" alt="Schermafbeelding 2021-10-28 om 11 03 52" src="https://user-images.githubusercontent.com/70513682/139224181-af361407-0dd1-44f4-b2fb-7e228be82809.png">
+
+
 # Step 4: Add NodeMCU Board
 1. Once Arduino has restarted go to Tools > Board > Boards manager...
 2. Type in the searchbar 'ESP'
 3. Select the 'esp8266 by ESP8266 Community' and install the newest version
 4. Restart Arduino once again 
+ 
+<img width="1439" alt="Schermafbeelding 2021-10-28 om 11 04 39" src="https://user-images.githubusercontent.com/70513682/139224285-4efef40b-828e-443b-aa48-27b6c533a305.png">
+
 # Step 5: Connect the Ultrasonic Sensor to the NodeMCU
 (Use jumper wires to connect the pins together)
 - Connect 'VCC' to 'VIN'
