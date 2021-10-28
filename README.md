@@ -8,7 +8,10 @@ At the end of this manual you will be able to measure the distance of a object u
 - Jumper wires
 # Step 1: Download install the Arduino software
 Install Arduino's latest version at: https://www.arduino.cc/en/Main/Software
+
+<img width="1440" alt="Schermafbeelding 2021-10-28 om 10 58 42" src="https://user-images.githubusercontent.com/70513682/139223228-75b055f4-8307-463d-b74c-429bbf8ae41f.png">
 # Step 2: Download and install USB drivers 
+
 Install the CP210x VCP Driver at: https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
 # Step 3: Install the NodeMCU Board 
 1. Open the Arduino software
