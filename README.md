@@ -113,3 +113,4 @@ after this the setup is finished and de ultrasonic sensor should be emitting the
 - https://www.youtube.com/watch?v=LIiFVYXuwTU
 - https://www.instructables.com/Distance-Measurement-Using-HC-SR04-Via-NodeMCU/
 - https://imdb-api.com/api/#IMDbList-header
+- https://create.arduino.cc/projecthub/neverofftheinternet/esp8266-setup-and-first-wifi-connection-76fc3c
