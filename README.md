@@ -102,9 +102,10 @@ after this the setup is finished and de ultrasonic sensor should be emitting the
 - If you have any problems with connecting to your 2.4GHZ internet connection try using your mobile hotspot, i dont recommend using a mobile hotspot coming from an Apple Device (This will result in no connection at all, try using a Android device)
 
 ## General Issues
-- When you get an error that the board is not connected check if the board is damaged, connected to a power source or try updating the software (running an old software version can result in many other errors) 
+- When you get an error that the board is not connected check if the board is damaged, connected to a power source or try updating the software (running an old software version can result in many other errors). 
 ![Board not conected](/img/Board.png)
-- Make sure to close every () and [] tag that exists within your code
+- Make sure to close every () and [] tag that exists within your code, this small mistake can result in your code not working.
+![Code error](/img/reset2.png)
 
 # Step 10: Sources
 - https://randomnerdtutorials.com/esp8266-nodemcu-hc-sr04-ultrasonic-arduino/
