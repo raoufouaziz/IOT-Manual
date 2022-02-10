@@ -102,6 +102,8 @@ after this the setup is finished and de ultrasonic sensor should be emitting the
 - If you have any problems with connecting to your 2.4GHZ internet connection try using your mobile hotspot, i dont recommend using a mobile hotspot coming from an Apple Device (This will result in no connection at all, try using a Android device)
 
 
+![Board not conected](/img/Schermafbeelding 2022-02-10 om 22.18.44.png)
+
 # Step 10: Sources
 - https://randomnerdtutorials.com/esp8266-nodemcu-hc-sr04-ultrasonic-arduino/
 - https://www.youtube.com/watch?v=LIiFVYXuwTU
