@@ -46,49 +46,83 @@ Install the CP210x VCP Driver at: https://www.silabs.com/developers/usb-to-uart-
 # Step 6: Define triggers and echo pins
 Open the Arduino editor and define the echopins and triggerpins (Put this code before the setup()
  
-
-<img width="250" alt="Schermafbeelding 2021-10-28 om 00 54 17" src="https://user-images.githubusercontent.com/70513682/139158880-9bda90f1-3262-426a-a7e7-9d46aa1790a6.png">
+```
+const int trigPin = 12;
+const int echoPin = 14;
+```
 
 # Step 7: Define 'sound_speed' and 'CM_to_inch'
 (Put this code under the trigger and echo pins())
 
 The 'CM_TO_INCH' variable allows us to convert distance from centimeters to inches. 
 
-<img width="233" alt="Schermafbeelding 2021-10-28 om 01 29 00" src="https://user-images.githubusercontent.com/70513682/139161859-8a7d93e4-4321-4b7d-b184-714f480661c0.png">
-
+```
+#define SOUND_VELOCITY 0.050
+#define CM_TO_INCH 0.393701
+```
 Then, initialize the following variables.
 
-<img width="227" alt="Schermafbeelding 2021-10-28 om 01 35 51" src="https://user-images.githubusercontent.com/70513682/139162312-c54632ac-d3f3-4344-8cfc-39de428f3c05.png">
+```
+long duration;
+float distanceCm;
+float distanceInch;
+```
 
 # Step 8: Setup()
 (Every code that is shown now needs to be put inside the setup())
 
 In the Setup(), put the serial communication to 115200 so that the measurment is able to be shown in the serial monitor
 
-<img width="470" alt="Schermafbeelding 2021-10-28 om 01 40 41" src="https://user-images.githubusercontent.com/70513682/139162680-59eb234f-8b88-4422-b5f9-1d9bcb649d9b.png">
+```
+Serial.begin(115200); // Starts the serial communication
+```
 
 Define the trigger pins as the output, they send out the soundwave. Define the echo pins as the input, they receive the reflected soundwave and send the signal to the board
 
-<img width="482" alt="Schermafbeelding 2021-10-28 om 01 43 11" src="https://user-images.githubusercontent.com/70513682/139162875-a21d332b-fac4-46af-bf89-bd855b64ec63.png">
+```
+pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
+pinMode(echoPin, INPUT); // Sets the echoPin as an Input
+```
 
 # Step 8: Loop()
 (Every code that is shown now needs to be put inside the loop())
 
 In the Loop(), the following line 'LOW' will give out a short pulse to ensure that the 'High' will send out a clean pulse. The 'High' pulse will send out a ultrasound
 
-<img width="433" alt="Schermafbeelding 2021-10-28 om 01 52 57" src="https://user-images.githubusercontent.com/70513682/139163559-f7b8380f-1a33-4033-9276-9b7aafd4f083.png">
+```
+void loop() {
+  // Clears the trigPin
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  // Sets the trigPin on HIGH state for 10 micro seconds
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+```
 
 After this the following line below will calculate the distance of a object while using the speed that the sound travels in as variable
 
-<img width="331" alt="Schermafbeelding 2021-10-28 om 01 57 12" src="https://user-images.githubusercontent.com/70513682/139163837-6c7ba717-4e4f-4d52-9423-0b0e5ec49ffe.png">
+```
+// Calculate the distance
+distanceCm = duration * SOUND_VELOCITY/2;
+```
 
 to convert the ouput in CM instead of only outputting it in inch, use the following line
 
-<img width="322" alt="Schermafbeelding 2021-10-28 om 01 58 28" src="https://user-images.githubusercontent.com/70513682/139163932-c0eba53d-31c5-45d0-a3b4-04fd93e437f3.png">
+```
+// Convert to inches
+distanceInch = distanceCm * CM_TO_INCH;
+```
 
 as last this line will put out the variables into the serial monitor as distance in cm and inch
 
-<img width="325" alt="Schermafbeelding 2021-10-28 om 02 01 02" src="https://user-images.githubusercontent.com/70513682/139164091-03219cc7-45e7-444b-9532-8fd8f0f5b16b.png">
+```
+  // Prints the distance on the Serial Monitor
+  Serial.print("Distance (cm): ");
+  Serial.println(distanceCm);
+  Serial.print("Distance (inch): ");
+  Serial.println(distanceInch);
+```  
 
 after this the setup is finished and de ultrasonic sensor should be emitting the distance recored in cm and inch!
 # Step 9: Errors
@@ -114,31 +148,3 @@ after this the setup is finished and de ultrasonic sensor should be emitting the
 - https://www.instructables.com/Distance-Measurement-Using-HC-SR04-Via-NodeMCU/
 - https://imdb-api.com/api/#IMDbList-header
 - https://create.arduino.cc/projecthub/neverofftheinternet/esp8266-setup-and-first-wifi-connection-76fc3c
-
-```
-#include <ESP8266WiFi.h>
-
-const char* ssid = "your-wifi";
-const char* password = "your-password";
-
-void setup()
-{
-  Serial.begin(9600);
-  Serial.println();
-
-  WiFi.begin(ssid, password);
-
-  Serial.print("Connecting");
-  while (WiFi.status() != WL_CONNECTED)
-  {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println();
-
-  Serial.print("Connected, IP address: ");
-  Serial.println(WiFi.localIP());
-}
-
-void loop() {}
-```
