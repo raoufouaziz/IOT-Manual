@@ -91,7 +91,12 @@ as last this line will put out the variables into the serial monitor as distance
 <img width="325" alt="Schermafbeelding 2021-10-28 om 02 01 02" src="https://user-images.githubusercontent.com/70513682/139164091-03219cc7-45e7-444b-9532-8fd8f0f5b16b.png">
 
 after this the setup is finished and de ultrasonic sensor should be emitting the distance recored in cm and inch!
-# Step 9: Links
+# Step 9: Errors
+
+
+
+
+# Step 10: Sources
 - https://randomnerdtutorials.com/esp8266-nodemcu-hc-sr04-ultrasonic-arduino/
 - https://www.youtube.com/watch?v=LIiFVYXuwTU
 - https://www.instructables.com/Distance-Measurement-Using-HC-SR04-Via-NodeMCU/
