@@ -94,7 +94,7 @@ after this the setup is finished and de ultrasonic sensor should be emitting the
 # Step 9: Errors
 ## Serial Monitor Issues
 - If you get a lot of weird characters in your serial monitor make sure that the baudrate of the monitor is the same number as in the Serial.begin(). Changing the baudrate tot the exact same number as the Serial.begin() will fix this problen quite some time. 
-
+![weird characters](/img/questionmark.png)
 - When changing the baudrate does not remove the weird characters in the serial monitor you should try to reset the Arduino, resetting the Arduino is quite easy. On the Arduino board a small button can be found below the letters "RTS", clicking on this button will make the Arduino reset itself.
 
 ![Reset button](/img/reset.png)
