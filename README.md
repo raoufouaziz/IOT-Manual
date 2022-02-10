@@ -100,6 +100,7 @@ after this the setup is finished and de ultrasonic sensor should be emitting the
 ![Reset button](/img/reset.png)
 ## WIFI Issues
 - If you have any problems with connecting to your 2.4GHZ internet connection try using your mobile hotspot, i dont recommend using a mobile hotspot coming from an Apple Device (This will result in no connection at all, try using a Android device)
+- If the first solution does not fix the error try to follow the steps listed on this forum https://create.arduino.cc/projecthub/neverofftheinternet/esp8266-setup-and-first-wifi-connection-76fc3c
 
 ## General Issues
 - When you get an error that the board is not connected check if the board is damaged, connected to a power source or try updating the software (running an old software version can result in many other errors). 
