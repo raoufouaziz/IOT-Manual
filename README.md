@@ -114,3 +114,31 @@ after this the setup is finished and de ultrasonic sensor should be emitting the
 - https://www.instructables.com/Distance-Measurement-Using-HC-SR04-Via-NodeMCU/
 - https://imdb-api.com/api/#IMDbList-header
 - https://create.arduino.cc/projecthub/neverofftheinternet/esp8266-setup-and-first-wifi-connection-76fc3c
+
+```
+#include <ESP8266WiFi.h>
+
+const char* ssid = "your-wifi";
+const char* password = "your-password";
+
+void setup()
+{
+  Serial.begin(9600);
+  Serial.println();
+
+  WiFi.begin(ssid, password);
+
+  Serial.print("Connecting");
+  while (WiFi.status() != WL_CONNECTED)
+  {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println();
+
+  Serial.print("Connected, IP address: ");
+  Serial.println(WiFi.localIP());
+}
+
+void loop() {}
+```
