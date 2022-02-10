@@ -92,7 +92,9 @@ as last this line will put out the variables into the serial monitor as distance
 
 after this the setup is finished and de ultrasonic sensor should be emitting the distance recored in cm and inch!
 # Step 9: Errors
+## Serial Monitor Issues
 
+## WIFI Issues
 
 
 
